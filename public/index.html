@@ -5,17 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Bitrix24 app tutorial</title>
-    <!-- подключаем библиотеку BX24 -->
-    <script src="https://unpkg.com/bx24@latest/lib/index.js"></script>
   </head>
   <body>
-    <script>
-        var bx24 = new BX24();
-
-        bx24.getAuth()
-        .then(function(auth) {
-            console.log(auth);
-        })
+    <div id="root"></div>
+    <script src="../src/index.js">
     </script>
   </body>
 </html>
