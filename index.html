@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bitrix24 app tutorial</title>
+    <!-- подключаем библиотеку BX24 -->
+    <script src="https://api.bitrix24.com/api/v1/"></script>
+  </head>
+  <body>
+    <script>
+      /**
+      * передаем методу  `init` в качестве параметра callback-функцию 
+      * - наше приложение 
+      */
+      BX24.init(app);
+
+      function app() {
+        const initDate = BX24.getAuth();
+        console.log("ititDate: ", initDate);
+      }
+    </script>
+  </body>
+</html>
